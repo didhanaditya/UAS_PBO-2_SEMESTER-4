@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jFiles.controllers.dashboardController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutY="287.0" mnemonicParsing="false" onMouseClicked="#signOut" prefHeight="113.0" prefWidth="175.0" text="Sign Out" />
+                  <Button layoutY="1.0" mnemonicParsing="false" onMouseClicked="#backToAccounts" text="&lt;--" />
+                  <Label fx:id="balanceLabel" layoutX="73.0" layoutY="26.0" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutY="1.0" mnemonicParsing="false" onMouseClicked="#getCash" prefHeight="200.0" prefWidth="208.0" text="Get Cash" />
+                  <Button layoutX="208.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="200.0" prefWidth="208.0" text="Deposit" />
+                  <Label contentDisplay="CENTER" layoutY="201.0" prefHeight="200.0" prefWidth="417.0" text="Banking Made EASY" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="120.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

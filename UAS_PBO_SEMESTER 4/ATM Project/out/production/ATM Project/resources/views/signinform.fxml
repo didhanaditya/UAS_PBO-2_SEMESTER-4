@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jFiles.controllers.signinController">
+    <children>
+      <AnchorPane layoutX="150.0" layoutY="85.0" prefHeight="230.0" prefWidth="300.0">
+         <children>
+              <TextField fx:id="fullNameID" layoutX="76.0" layoutY="66.0" promptText="Enter Full Name" />
+             <PasswordField fx:id="customerID" layoutX="76.0" layoutY="103.0" promptText="Enter 6-digit Customer #" />
+              <PasswordField fx:id="pinID" layoutX="75.0" layoutY="139.0" promptText="Enter 4-digit PIN" />
+            <Label layoutX="14.0" layoutY="70.0" text="Full Name:" />
+            <Label layoutX="44.0" layoutY="143.0" text="PIN:" />
+              <Button layoutX="123.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#signInFromMenu" text="Sign In" />
+            <Label layoutX="44.0" layoutY="207.0" text="Don't have an account yet?" />
+            <Hyperlink layoutX="199.0" layoutY="204.0" onMouseClicked="#signUpFromMenu" text="Sign Up" />
+            <Label layoutX="5.0" layoutY="106.0" text="Customer #:" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

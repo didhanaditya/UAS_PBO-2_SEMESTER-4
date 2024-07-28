@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jFiles.controllers.createAccountController">
+   <children>
+      <AnchorPane layoutX="124.0" layoutY="50.0" prefHeight="300.0" prefWidth="350.0">
+         <children>
+            <Button layoutX="77.0" layoutY="242.0" mnemonicParsing="false" onMouseClicked="#createAccount" text="Create Account" />
+            <Button layoutX="213.0" layoutY="242.0" mnemonicParsing="false" onMouseClicked="#goToSignIn" text="Cancel" />
+            <Label layoutX="26.0" layoutY="60.0" text="First Name:" />
+            <Label layoutX="27.0" layoutY="93.0" text="Last Name:" />
+            <Label layoutX="66.0" layoutY="126.0" text="PIN:" />
+            <Label layoutX="18.0" layoutY="163.0" text="Re-enter PIN:" />
+            <TextField fx:id="firstNameID" layoutX="101.0" layoutY="56.0" />
+            <TextField fx:id="lastNameID" layoutX="101.0" layoutY="89.0" />
+            <PasswordField fx:id="pinID" layoutX="101.0" layoutY="122.0" promptText="Enter 4-digit PIN" />
+            <PasswordField fx:id="pinConfirmID" layoutX="101.0" layoutY="159.0" promptText="Re-enter 4-digit PIN" />
+            <CheckBox layoutX="92.0" layoutY="202.0" mnemonicParsing="false" onMouseClicked="#agreedToTerms" prefHeight="17.0" prefWidth="196.0" text="I agree to terms and conditions." />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

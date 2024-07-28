@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0"
+            prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="jFiles.controllers.depositPromptController">
+   <Button fx:id="depositButton" layoutX="80.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#deposit"
+           text="Deposit"/>
+   <Button fx:id="cancelButton" layoutX="177.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#cancel"
+           text="Cancel"/>
+   <TextField fx:id="depositValue" layoutX="80.0" layoutY="74.0"/>
+</AnchorPane>
